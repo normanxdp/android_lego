@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="android.bigplan.lego.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip">
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/copper" />
+
+        <TextView
+            android:id="@+id/tv_money_myawllet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+
+            android:text="0"
+
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:background="#666" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_tixian_myawllet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip">
+
+
+                <TextView
+                    android:id="@+id/tv_tixian_myawllet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/withdrawal"
+                    android:drawablePadding="10dip"
+                    android:gravity="center"
+                    android:text="@string/label_lazy_staff_tixian"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="#666" />
+
+            <LinearLayout
+                android:id="@+id/ll_chongzhi_myawllet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip">
+
+                <TextView
+                    android:id="@+id/tv_chongzhi_myawllet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/top_p"
+                    android:drawablePadding="10dip"
+                    android:gravity="center"
+                    android:text="@string/label_transcode_wellat"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="10dip"
+       android:layout_marginRight="10dip"
+        android:background="#666" />
+    <TextView
+        android:id="@+id/tv_myawllet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+
+        android:text="@string/label_lazy_staff_detail"
+android:layout_marginLeft="20dip"
+        android:textSize="12sp" />
+
+</LinearLayout>

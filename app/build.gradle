@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'legoyun'
+            keyPassword 'legoyun'
+            storeFile file('/Users/Jacky/my-work/legoYun/LegoYun-android/keystore/legoyun.jks')
+            storePassword 'legoyun'
+        }
+        debug {
+            keyAlias 'legoyun'
+            keyPassword 'legoyun'
+            storeFile file('/Users/Jacky/my-work/legoYun/LegoYun-android/keystore/legoyun.jks')
+            storePassword 'legoyun'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "android.bigplan.lego"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 3
+        versionName "3.13"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']  // <-- Set your folder here!
+    }
+    dexOptions {
+        javaMaxHeapSize '4g'
+    }
+    lintOptions {
+        abortOnError false
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:design:23.1.0'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.android.support:recyclerview-v7:23+'
+    compile 'cn.yipianfengye.android:zxing-library:2.2'
+    compile "com.github.bumptech.glide:glide:3.7.0"
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
+    compile 'com.github.fg2q1q3q:DropDownMenu:1.1.1'
+    compile 'com.hedgehog.ratingbar:app:1.0.4'
+    compile files('libs/alipaySdk-20170922.jar')
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
+    compile 'com.amap.api:navi-3dmap:latest.integration'
+    compile files('libs/Msc.jar')
+    compile 'com.youth.banner:banner:1.4.10'
+}

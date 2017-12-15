@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+   android:gravity="center_vertical">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/tv_choulao_errands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dip"
+            android:text="@string/tv_yingguchoulao"
+            android:textSize="19sp"
+            />
+        <TextView
+            android:id="@+id/tv_qian_errands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_choulao_errands"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:gravity="center_vertical"
+            android:textColor="@color/red"
+            android:textSize="19sp"
+            android:text="5"
+            />
+        <TextView
+            android:id="@+id/tv_xiaofei_errands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:layout_marginLeft="10dip"
+            android:layout_below="@+id/tv_choulao_errands"
+            android:gravity="center_vertical"
+            android:text="(含小费¥ 0）"
+            android:textColor="@color/TextColorGray"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_button_orange"
+            android:text="@string/btn_complete_order_ok"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

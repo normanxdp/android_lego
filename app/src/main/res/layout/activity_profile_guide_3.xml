@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+>
+    <include
+        android:id="@+id/include_nearorder"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edit_beizhu"
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:background="#FFFFFF"
+        android:gravity="left"
+        android:hint="@string/hint_input_your_feedback"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/TextColorBlack"
+        android:textColorHint="@color/hint_gray"
+        android:textSize="15sp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20"
+        android:paddingTop="@dimen/margin_10"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.bigplan.lego.view.FlowLayout
+                android:id="@+id/fl_flow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/cb_show_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:paddingLeft="5dp"
+                android:text="展开/隐藏"
+                android:textColor="@color/black_light"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <!--<include-->
+                <!--android:id="@+id/btn_add"-->
+                <!--layout="@layout/item_profile_hcf_add"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="5dp" />-->
+
+            <LinearLayout
+                android:id="@+id/ll_select_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/margin_5"
+                android:paddingTop="@dimen/margin_5">
+
+                <TextView
+                    android:id="@+id/tv_select_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您已选所属行业(" />
+
+                <TextView
+                    android:id="@+id/tv_select_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#ddd" />
+
+                <TextView
+                    android:id="@+id/tv_fenmu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/3)" />
+            </LinearLayout>
+
+            <android.bigplan.lego.view.FlowLayout
+                android:id="@+id/fl_selected"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

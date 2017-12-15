@@ -1,0 +1,556 @@
+<resources>
+    <string name="app_name">云联乐购</string>
+    <string name="yunlian_memberid">云联惠</string>
+    <string name="loading">请稍候&#8230;</string>
+    <string name="app_upgrade_download_sucess">新版本下载成功,开始安装.</string>
+    <string name="app_upgrade_download_fail">新版本下载失败，请稍后再试.</string>
+
+
+    <string name="telphone">手机号码</string>
+    <string name="login">登         录</string>
+    <string name="find_pwd">忘记密码</string>
+    <string name="error_phone">请输入手机号码！</string>
+    <string name="error_reservationnumber">请输入预留号码！</string>
+    <string name="error_bank">请选择要开户的银行</string>
+    <string name="error_oil">请选择要充卡的类型</string>
+    <string name="error_card">请填写银行卡号</string>
+    <string name="error_oilcard">请填写油卡卡号</string>
+    <string name="error_person">请填写开户人姓名</string>
+    <string name="error_oil_person">填写油卡用户姓名</string>
+    <string name="error_phone_input">手机号码输入错误！</string>
+    <string name="error_id_input">推荐人ID|手机号输入错误</string>
+    <string name="error_sign_empty">签名为空！</string>
+    <string name="error_pay_input">金额输入错误！</string>
+    <string name="error_format_pay_input">金额输入格式错误！</string>
+    <string name="error_pay_input_max">金额不能超过可提现的金额</string>
+    <string name="error_phone_get">获取不到手机号码！</string>
+    <string name="forbid_shop_modify_name">商家不允许修改昵称，需要修改请联系乐购客服！</string>
+    <string name="error_localtion_store">商店的位置不正确，导航失败</string>
+    <string name="error_localtion_current">定位不到当前位置，导航失败</string>
+    <string name="error_pwd">请输入密码！</string>
+    <string name="error_store">请输入店名！</string>
+    <string name="error_pwd_match">两次密码输入不一致！</string>
+    <string name="error_pwd_length">请输入六位数字密码</string>
+    <string name="error_pwd_length1">密码长度不能少于6个字符</string>
+    <string name="error_pwd_zero">支付密码不能以0开头</string>
+    <string name="error_pwd_length2">密码长度不能超过18个字符</string>
+    <string name="error_oldpwd_length1">旧密码长度不能少于6个字符</string>
+    <string name="error_oldpwd_length2">旧密码长度不能超过18个字符</string>
+    <string name="error_newpwd_length1">新密码长度不能少于6个字符</string>
+    <string name="error_newpwd_length2">新密码长度不能超过18个字符</string>
+    <string name="error_pwd_expr">密码只能是字母和数字</string>
+    <string name="error_pwd_old">请输入旧密码！</string>
+    <string name="forget_pwd_reset">设置新的密码</string>
+    <string name="input_subject">请选择您需要的科目</string>
+    <string name="input_teacher_class">请选择您需要的老师类型</string>
+    <string name="input_serve_class">请选择您需要的服务类型</string>
+    <string name="input_chef_class">请选择您需要的厨师类型</string>
+    <string name="error_confirmpwd_new">请再次输入新密码！</string>
+    <string name="error_pwd_new">请输入新密码！</string>
+    <string name="error_no_result">没有返回结果</string>
+    <string name="error_no_log">没有记录</string>
+    <string name="error_no_shop">没有商家</string>
+    <string name="error_no_bank">您还没绑定银行卡哦</string>
+    <string name="error_no_oilcard">您还没绑定油卡哦</string>
+    <string name="lable_pay_infomation">您向</string>
+    <string name="error_transto_success">转到消费钱包成功</string>
+    <string name="error_pay_charge">充值成功</string>
+    <string name="label_pay_oilcard_charge">充卡成功</string>
+    <string name="check_new_version">发现新版本</string>
+    <string name="check_new_version_title">检查新版本</string>
+    <string name="check_new_version_message">正在获取新版本信息 ....</string>
+    <string name="check_new_version_no_network">未找到网络连接，请设置后重试!</string>
+    <string name="check_new_version_null">未找到新版本信息，请稍后再试!</string>
+    <string name="check_new_version_exception">获取新版本信息出错，请稍后再试!</string>
+    <string name="check_new_version_latest">已经是最新版本!</string>
+    <string name="error_wmaidian">不可以在自己的店下单</string>
+
+    <string name="label_btn_confirm">确定</string>
+    <string name="label_modify_confirm">确定修改</string>
+    <string name="label_storename">您的店名</string>
+    <string name="label_btn_submit">提交</string>
+
+    <!-- SearchActivity  搜索 -->
+    <string name="label_title_result_search">搜索结果</string>
+    <string name="label_title_hot_search">热门搜索</string>
+    <string name="label_title_history_search">历史搜索</string>
+
+    <!-- MyActivity  我的 -->
+    <string name="label_lazy_staff">懒人员工</string>
+    <string name="label_my_favorite">我的收藏</string>
+    <string name="label_lazy_info">账户信息</string>
+    <string name="label_lazy_myreferee">我的推荐</string>
+    <string name="label_lazy_myreferee2">乐粉好友</string>
+    <string name="label_my_wallet">我的钱包</string>
+    <string name="label_my_pay">向商家支付</string>
+    <string name="title_become_staff">升级创业会员</string>
+    <string name="label_transmoney">转为消费资金</string>
+    <string name="label_my_wallet_log">钱包明细</string>
+    <string name="label_my_wallet_log_1">账单明细</string>
+    <string name="label_my_wallet_log0">收入明细</string>
+    <string name="label_my_wallet_log1">消费明细</string>
+    <string name="label_my_wallet_log2">充值明细</string>
+    <string name="label_my_wallet_petrochina">中石油油卡充值明细</string>
+    <string name="label_my_wallet_sinopec">中石化油卡充值明细</string>
+    <string name="label_my_wallet_oilcard">油卡充值明细</string>
+    <string name="label_my_wallet_log3">提现明细</string>
+    <string name="label_my_wallet_log4">转钱包明细</string>
+
+    <string name="label_my_wallet_log5">中石油充值明细</string>
+    <string name="label_my_wallet_log6">中石化充值明细</string>
+    <string name="label_shop_wallet">商家钱包</string>
+    <string name="label_my_order">订单记录</string>
+
+    <string name="label_my_paylog">我的账单</string>
+    <string name="label_favorite_log">收藏记录</string>
+    <string name="label_error_store_id">商店没有Id</string>
+    <string name="favorite_success">收藏成功</string>
+    <string name="del_favorite_success">取消收藏</string>
+    <string name="label_feedback">建议反馈</string>
+    <string name="feedback_empty">建议反馈信息不能为空</string>
+    <string name="feedback_success">感谢您的反馈！</string>
+    <string name="feedback_faild">建议反馈信息不能为空</string>
+    <string name="label_setting">设置</string>
+    <string name="label_about">关于我们</string>
+    <string name="label_pay_passsword">支付密码</string>
+    <string name="label_btn_pay">支付</string>
+    <string name="label_btn_paying">支付中...</string>
+    <string name="label_pay_success">支付成功</string>
+    <string name="label_pay_error_self">自己不能给自己支付</string>
+    <string name="label_btn_login">马上登录</string>
+    <string name="label_no_login">您还没登录哦!</string>
+    <string name="label_login_invalid">登录失效，请重新登录</string>
+    <string name="label_lazy_score">懒人好评</string>
+    <string name="label_lazy_staff_score">员工好评</string>
+    <string name="label_lazy_staff_tixian">提现</string>
+    <string name="label_income_log">收入记录</string>
+    <string name="label_recharge_log">充值记录</string>
+    <string name="label_sinopec_recharge_log">中石化充值记录</string>
+    <string name="label_petrochina_recharge_log">中石油充值记录</string>
+    <string name="label_pay_log">消费记录</string>
+    <string name="label_cash_log">提现记录</string>
+    <string name="label_cash_apply">提现申请</string>
+    <string name="label_transcode_log">转消费记录</string>
+
+    <string name="label_mybankcardlist">我的银行卡</string>
+    <string name="label_banklist">银行列表</string>
+    <string name="label_add">增加</string>
+    <string name="label_addbankcard">增加银行卡</string>
+    <string name="label_addoilcard">增加油卡</string>
+    <string name="label_upgrade_success">恭喜您，升级成为创业会员</string>
+    <string name="label_supportbanklist">支持银行：招商、工商、建设、中行、农业、民生、中信、交通、兴业等银行</string>
+    <string name="label_become_staff_explain">升级为创业会员，在乐购平台享有经营权，成为乐购商家。 \n更多创业会员特权，详细与客服联系。\n\n若你有实体商铺，请填好资料，升级后联系乐购工作人员，开通乐购商铺功能。\n\n乐购客服电话：0763-3117738 3117768\n联系人：梁小姐 13622937761 许小姐：13413531641 李生：13926667774</string>
+    <string name="label_bankcard">*银行卡号</string>
+    <string name="label_oilcard">*油卡卡号</string>
+    <string name="label_oilcard_name">*持卡人姓名</string>
+    <string name="label_mobile">*手机号码</string>
+    <string name="label_select_bank">*开户行</string>
+    <string name="label_select_oil">*油卡类型</string>
+    <string name="label_select_bankcard">选择要提现的银行卡</string>
+    <string name="label_select_person">*开户人(必须是商店的法人)</string>
+    <string name="label_cash_money">账户可提现余额:</string>
+    <string name="label_transto_money">账户可转消费金额:</string>
+    <string name="label_lazy_staff_chongzhi">充值</string>
+    <string name="label_lazy_oil_chongzhi">油卡充值</string>
+    <string name="label_transcode_wellat">转消费</string>
+    <string name="label_lazy_staff_detail">最近30天收支明细</string>
+    <string name="label_lazy_staff_cunruwallet">已存入钱包</string>
+    <!-- tips -->
+    <string name="tips_not_found_industry">没有找到您要查找的行业?</string>
+    <!-- MyDetailActivity  我的资料 -->
+    <string name="title_my_detail_info">我的资料</string>
+    <string name="label_modify_avatar">修改头像   </string>
+    <string name="label_my_nickname">我的昵称</string>
+    <string name="label_bandquickkname">账号绑定</string>
+    <string name="str_my_mobile">我的手机</string>
+    <string name="str_my_weixin">微信</string>
+    <string name="str_my_qq">QQ</string>
+    <string name="str_my_myaddress">我的地址</string>
+    <string name="str_my_pwd">安全设置</string>
+    <string name="str_no_band">未绑定</string>
+    <string name="str_band_mobile">绑定手机</string>
+    <string name="label_my_address">我的地址</string>
+    <string name="label_modify_password">登录密码</string>
+    <string name="label_modify_pay_pwd">支付密码</string>
+    <string name="label_modify_setpay_pwd">请输入您的支付密码</string>
+    <string name="btn_logout">退出登录</string>
+    <string name="label_logouted">您已注销</string>
+    <string name="label_my_name">用户名</string>
+    <!-- ReceiveAddressActivity 收货地址 -->
+    <string name="title_receive_address">服务地址</string>
+    <string name="label_storename_address">服务地址(非必填)</string>
+    <string name="label_longitude">经度(非必填)</string>
+    <string name="label_latitude">纬度(非必填)</string>
+    <string name="title_input_serve_address">请选择您的服务地址</string>
+    <string name="btn_new_address">新建地址</string>
+
+    <!-- NewModifyReceiveAddressActivity 新建修改收货地址 -->
+    <string name="title_new_receive_address">新建收货地址</string>
+    <string name="label_contact_name">联系人</string>
+    <string name="label_receive_address">收货地址</string>
+    <string name="label_detail_address">详细地址</string>
+    <string name="hint_your_name">你的名字</string>
+    <string name="hint_your_telephone">你的手机号码</string>
+    <string name="hint_your_area">请选择你的地区</string>
+    <string name="hint_your_detail_address">请填写详细地址</string>
+    <string name="hint_set_default_address">设置为默认地址</string>
+    <string name="btn_save_address">保存地址</string>
+    <string name="title_modify_receive_address">修改收货地址</string>
+    <string name="label_complete">完成</string>
+    <string name="error_contact_name">请输入联系人姓名！</string>
+    <string name="error_contact_telephone">请输入联系人手机号！</string>
+    <string name="error_input_your_area">请选择你的地区！</string>
+    <string name="error_your_detail_address">请输入你的详细地址！</string>
+
+    <!-- 验证码 -->
+    <string name="sms_name">请输入验证码！</string>
+    <string name="sms_name_length1">验证码长度不能少于4个字符</string>
+    <string name="sms_name_expr">验证码只能是字母和数字</string>
+    <string name="btn_send_verification_code">发送验证码</string>
+    <string name="send_verification_code_success">验证码已发送</string>
+    <string name="hint_please_confirm_code">请输入验证码</string>
+    <string name="hint_please_refereeid">推荐人ID|手机号(非必填)</string>
+    <!-- LoginRegitsterActivity  登录注册 -->
+    <string name="btn_login">登录</string>
+    <string name="label_copyright">Copyright @2006-2017</string>
+    <string name="label_company">清远云联惠电子商务有限公司</string>
+    <string name="label_about_explain">清远云联惠电子商务有限公司于2016年4月筹备，于2017年正式注册，是一家依托大数据云计算、集重组线下消费资源，并携手云联商业大系统打造出结合线上线下消费为基础的第三方电子商务运营公司.整合各方资源，融入云联消费资本论而推出云联乐购电子商务平台。乐购以秉承云联惠大爱精神，为客牟利、促进销售、培养行业领袖、传递财富、传承共赢、传播事业博爱为宗旨。坚持国家政策为导向，以共享经济时代为背景下，积极响应‘互联网+’行动计划。致力构建消费模式体系中枢，而实现商家与消费者互通互赢局面。让传统商家摆脱经营难、让消费者敢消费实现无压力而快乐消费。</string>
+    <string name="label_yl_explain">一、绑定云联惠帐号说明\n1、如您已是云联恵会员,请在上面输入云联惠ID和云联惠关联手机号码。\n2、如您非云联恵会员,首先点击“云联惠注册”按提示完成注册。注册后可以登陆云联恵,即可享受消费积分赠送,查看积分赠送明细，消费多少送您多少。\n\n二、积分赔返流程\n1、注册成为云联乐购会员，再绑定云联惠帐号。\n2、您在云联乐购所有充值，云联乐购都将通过云联恵平台赠送等额白积分。即在平台充值1000元，赠送云联惠1000元白积分，如此类推。\n3、云联惠每天将按照您白积分的万分之五左右返还至您的云联恵账号里,进入云联恵可直接绑定您的银行卡进行提现。\n4、如有疑问请致电以下官方客服热线答询云联乐购官方客服0763-3310213\n5、您只有在本平台充值, 且已经绑定云联恵会员帐号才能享受到消费赠送,如在本平台充值,您未绑定云联恵会员,将不享受积分赠送。\n6、在线充值成功后，云联乐购将于1-3个工作日赠送云联惠白积分，如3个工作日未到帐，请与客服联系。\n7、云联乐购，清远云联惠电子商务有限公司拥有最终解释权。</string>
+    <string name="btn_yl_login">云联惠登录</string>
+    <string name="btn_petrochina">中石油卡号</string>
+    <string name="btn_sinopec">中石化卡号</string>
+    <string name="label_my_yl">我的云联惠</string>
+
+    <string name="btn_yl_register">云联惠注册</string>
+    <string name="btn_register">注册</string>
+    <string name="register_success">注册成功</string>
+    <string name="btn_phone_register">手机注册</string>
+    <string name="lable_become_shop">创业会员</string>
+    <string name="lable_yl_member">云粉之家</string>
+    <string name="title_login">用户登录</string>
+    <string name="title_register">手机注册</string>
+    <string name="hint_your_telephone_number">你的手机号</string>
+
+    <string name="hint_please_input_pwd">请输入密码</string>
+    <string name="hint_tel_input_pwd">请设置手机登录密码</string>
+    <string name="hint_tel_conform_pwd">请再次确定手机登录密码</string>
+    <string name="hint_please_conform_pwd">请确定密码</string>
+    <string name="hint_have_read_and_agree">我已阅读并同意</string>
+    <string name="hint_lazy_user_protocol">懒人用户协议</string>
+    <string name="dialog_title_send_code">验证码提示</string>
+    <string name="dialog_msg_have_send_code">验证码已发送</string>
+    <string name="label_forget_pwd">忘记密码?</string>
+    <string name="label_my_oilcard">我的油卡</string>
+    <string name="label_my_oilcard_recharge">油卡充值</string>
+    <!-- ForgetPwdActivity  忘记密码 -->
+    <string name="title_forget_pwd">忘记密码</string>
+    <string name="title_set_pwd">输入密码</string>
+
+    <!-- ResetPwdActivity  修改密码 -->
+    <string name="title_reset_pwd">修改密码</string>
+    <string name="reset_pwd_success">修改密码成功</string>
+    <string name="modify_pay">修改</string>
+    <string name="reset_yl_success">修改云联惠账号成功</string>
+    <string name="hint_old_pwd">旧密码</string>
+    <string name="hint_input_new_pwd">请输入新密码</string>
+    <string name="hint_confirm_new_pwd">确定输入新密码</string>
+    <string name="pay_pwd_success">设置支付密码</string>
+    <string name="pay_pwd_validates">检验支付密码</string>
+    <!-- SettingActivity  设置 -->
+    <string name="title_setting">设置</string>
+    <string name="label_version_num">版本号</string>
+    <string name="label_version_already_update">已是最新版本</string>
+    <string name="label_check_version">检查更新</string>
+    <string name="label_pay_pwd">支付密码</string>
+    <string name="label_modify_pwd">更改密码</string>
+    <string name="label_logout">注销账号</string>
+
+    <!-- FeedBackActivity  建议反馈 -->
+    <string name="title_feedback">建议反馈</string>
+    <string name="hint_input_your_feedback">请输入您的宝贵建议</string>
+    <string name="hint_input_your_monety">支付金额</string>
+    <string name="hint_input_your_ylid">云联惠账号</string>
+    <string name="hint_input_your_ylmobile">云联惠关联手机</string>
+    <string name="hint_input_your_transtomonety">转到消费钱包的金额</string>
+    <string name="hint_input_your_good">请输入商品名称</string>
+    <string name="hint_input_your_good_content">请输入商品内容</string>
+    <!-- MainTabActivity  主界面 -->
+    <string name="label_tab_tv_first">首页</string>
+    <string name="label_tab_tv_second">附近</string>
+    <string name="label_tab_tv_search">搜索</string>
+    <string name="label_tab_tv_third">员工抢单</string>
+    <string name="label_tab_tv_fouth">订单</string>
+    <string name="label_waimain_order">外卖订单</string>
+    <string name="label_tab_tv_fifth">我的</string>
+    <string name="tips_exit_for_double">再按一次退出%s</string>
+
+    <!-- HomeActivity  首页 -->
+    <string name="label_lazy_rating">评价:</string>
+
+    <string name="label_distance_you">距您</string>
+    <string name="label_distance_meter">米</string>
+    <string name="label_around_staff">附近商家</string>
+    <string name="tips_for_search_editable_box">输入你想查询的商家</string>
+    <string name="label_default_location">深圳市</string>
+
+    <!-- GrabOrderActivity  抢单 -->
+    <string name="title_grab_order">抢单</string>
+    <string name="title_grab_order_success">抢单成功</string>
+    <string name="label_order_money">提供费用: </string>
+    <string name="label_order_xiuxi">休息中，不可接单 </string>
+    <string name="label_order_jiedan">我要接单 </string>
+    <string name="label_order_look">查看订单</string>
+
+    <!-- GrabOrderDeatilActivity  抢单 订单详情 -->
+    <string name="title_grab_order_detail">订单详情</string>
+    <string name="title_lazy_name">懒人名称</string>
+    <string name="label_order_info">订单信息</string>
+    <string name="label_order_fuwu">服务信息</string>
+    <string name="label_order_shouhuoinf">收货信息</string>
+    <string name="label_order_grab_success">恭喜您，抢单成功！</string>
+    <string name="label_order_contacts_member">请联系懒人了解订单详情！</string>
+
+    <string name="label_contact_lazy">联系懒人:</string>
+    <string name="label_lookup_map">查看地图</string>
+    <string name="label_lookup_jiajiao">家教技能</string>
+    <string name="label_lookup_kemu">教学科目</string>
+    <string name="label_lookup_time">服务时间</string>
+
+
+    <!-- OrderActivity  订单 -->
+    <string name="title_order">订单</string>
+    <string name="title_order_content">订单内容：</string>
+    <string name="label_chat_to_lazy">和懒人聊天</string>
+    <string name="tab_title_lazy_order">懒人订单</string>
+    <string name="tab_title_staff_order">员工订单</string>
+
+    <string name="order_state_confirm_complete">确认完成</string>
+    <string name="order_state_order_canceled">用户已取消</string>
+    <string name="order_state_order_deleted">订单已删除</string>
+    <string name="order_state_order_fail">订单失败</string>
+    <string name="order_state_system_cancel_order">系统取消订单</string>
+    <string name="order_state_comment_staff">评价员工</string>
+    <string name="order_state_comment_lazy">评价懒人</string>
+    <string name="order_state_pay_fail">用户支付失败</string>
+    <string name="order_state_remind_lazy_pay">提醒懒人付款</string>
+    <string name="order_state_confirm_received">确认完成</string>
+    <string name="order_state_selecting">等待懒人选择</string>
+    <string name="order_state_confirm_sended">确认送达</string>
+    <string name="order_state_order_complete">订单完成</string>
+    <string name="order_state_order_havecomplete">订单已完成</string>
+    <string name="order_state_order_commented">已评论</string>
+    <string name="order_state_waiting_grabed">等待员工接单(还剩</string>
+    <string name="order_chognzhi">充值金额:</string>
+    <string name="label_order_chognzhi">*充卡金额</string>
+    <string name="order_pay_for">选择充值方式</string>
+    <string name="select_oil_type">选择油卡类型</string>
+    <string name="label_select_oil_card">*选择油卡</string>
+    <string name="order_pay_forweixin">微信支付</string>
+    <string name="label_petrochina">中石油</string>
+    <string name="label_select_your_oilcard">请选择油卡</string>
+    <string name="label_inopec">中石化</string>
+    <string name="order_pay_forzfb">支付宝支付</string>
+    <string name="order_pay_forqq">QQ钱包充值</string>
+    <string name="order_pay_queding">确定充值</string>
+    <string name="order_pay">充值</string>
+    <string name="order_item_serve_time">需要服务时间：%s小时</string>
+    <string name="order_lazy_base_info" formatted="false">懒人姓名\t\t%1$s\n手机号码\t\t%2$s\n服务地址\t\t%3$s</string>
+    <string name="order_telphone">联系电话:%s</string>
+    <string name="order_look_comments">查看评价</string>
+
+    <string name="hint_content_is_grab_order">是否抢单</string>
+    <string name="dialog_title_order_confirm">订单确认</string>
+    <string name="dialog_content_confirm_received">确认收货</string>
+    <string name="dialog_content_confirm_sended">确认送达</string>
+
+    <!-- OrderErrandsActivity  跑腿订单 -->
+    <string name="btn_help_me_send">帮我送</string>
+    <string name="btn_help_me_buy">帮我买</string>
+    <string name="btn_fill_order_detail">填写订单详情</string>
+    <string name="hint_fill_receive_address">请填写收货地址</string>
+    <string name="hint_fill_receive_xiaofei">加点小费懒人员工会更快哟！</string>
+    <string name="hint_lazy_money">懒人提供￥50费用</string>
+    <string name="hint_lazy_xiaofei">(含小费:6.00)</string>
+    <string name="hint_order_detail">订单内容详情</string>
+    <string name="order_money">￥50</string>
+    <string name="order_beizhu">备注</string>
+    <string name="order_beizhu_info">米饭多点</string>
+    <string name="hint_fill_send_address">送往哪里？</string>
+    <string name="hint_fill_apply_staff">尊敬的用户：您还没绑定手机！根据国家规定，手机用户在使用手机产品需要实名制认证，请先必须绑定手机完成实名制认证！</string>
+    <!-- OrderErrandsActivity  钟点工订单 -->
+
+    <string name="hint_fill_help">需要员工帮你服务什么?</string>
+    <string name="hint_serve_something">需要员工帮你服务什么?</string>
+    <string name="hint_fill_help_time">请选择服务时间</string>
+    <string name="hint_fill_help_cooking">请选择炒菜数量</string>
+    <string name="hint_fill_help_Hotpot">请选择火锅数量</string>
+    <string name="hint_fill_wish_num">请描述衣服的数量</string>
+    <string name="hint_fill_default_serve_time">1小时</string>
+    <string name="hint_fill_default_serve_wish">1件</string>
+    <string name="hint_fill_default_serve_cooking">1盘</string>
+    <string name="hint_fill_default_serve_hotpot">1锅</string>
+    <!-- OrderErrandsActivity  家政订单 -->
+
+    <string name="lable_oldMan_nanny">老人陪伴</string>
+    <string name="lable_nanny">保姆</string>
+    <string name="lable_maternity_matron">月嫂</string>
+
+    <!-- OrderErrandsActivity  厨师订单 -->
+    <string name="lable_chef_1">湘菜</string>
+    <string name="lable_chef_2">川菜</string>
+    <string name="lable_chef_3">粤菜</string>
+    <string name="lable_chef_4">浙菜</string>
+    <string name="lable_chef_5">鲁菜</string>
+    <string name="lable_chef_6">闽菜</string>
+    <string name="lable_chef_7">苏菜</string>
+    <string name="lable_chef_8">徽菜</string>
+
+    <!-- OrderErrandsActivity  厨师订单 -->
+    <string name="lable_tutor_2">小学老师</string>
+    <string name="lable_tutor_3">初中老师</string>
+    <string name="lable_tutor_4">高中老师</string>
+
+
+    <string name="lable_subject_chinese">语文</string>
+    <string name="lable_subject_mathematics">数学</string>
+    <string name="lable_subject_english">英语</string>
+    <string name="lable_subject_political">政治</string>
+    <string name="lable_subject_history">历史</string>
+    <string name="lable_subject_physical">物理</string>
+    <string name="lable_subject_chemistry">化学</string>
+
+    <string name="help">帮助</string>
+    <string name="string_help_text">当前应用缺少必要权限。 请点击 设置 权限 打开所需权限。 最后点击两次后退按钮，即可返回。</string>
+    <string name="settings">设置</string>
+    <string name="no_settings">未设置</string>
+    <string name="quit">退出</string>
+    <!-- OrderSupermarketDetailActivity  跑腿详细订单 -->
+    <string name="title_errand_detail">订单详情</string>
+    <string name="title_errand_medetail">我的订单详情</string>
+    <string name="title_errand_bossdetail">雇主订单详情</string>
+    <string name="hint_please_describe_your_package">请描述一下你的订单!</string>
+    <string name="hint_please_describe_your_need_help">请描述一下需要员工帮你做什么!</string>
+    <string name="hint_please_describe_your_wish">请描述一下您需求洗的衣服</string>
+    <string name="error_input_package_describe_info">请输入包裹的描述信息</string>
+    <string name="error_input_cook_info">请选择需要做菜的数量</string>
+    <string name="error_input_name_empty">用户名不能为空</string>
+    <string name="error_upload_package_picture">请上传有关订单的图片</string>
+    <string name="error_start_address">请输入开始地址</string>
+    <string name="error_end_address">请输入结束地址</string>
+    <string name="hint_please_buy_something">需要员工帮你买什么</string>
+    <string name="hint_please_your_address">请输入你的地址</string>
+
+    <string name="label_receive_guy">收货人</string>
+    <string name="hint_receive_name">订单联系人姓名</string>
+    <string name="hint_receive_telephone">订单联系人手机号码</string>
+    <string name="hint_receive_detail_address">联系人详细地址</string>
+    <string name="btn_complete_order_detail">完成订单详情</string>
+    <string name="btn_complete_order_ok">确定下单</string>
+    <string name="tv_yingguchoulao">应付酬劳:</string>
+
+    <!-- OrderWaitingGrabActivity  等待抢单/通知员工 -->
+    <string name="title_order_waiting_grab">通知员工</string>
+    <string name="label_left_time_to_auto_close_order">离自动关闭订单剩余时间: </string>
+    <string name="label_already_notify_nearby_staff">已通知附近员工</string>
+    <string name="btn_cancel_order">取消订单</string>
+    <string name="dialog_title_hint">提示</string>
+
+    <!-- NearByActivity  附近 -->
+    <string name="title_nearby">附近商家</string>
+    <string name="label_staff_name">员工姓名: </string>
+    <string name="label_staff_skill">员工技能: </string>
+    <string name="label_staff_phone">员工手机: </string>
+    <string name="label_staff_rate_score">员工评分: </string>
+    <string name="btn_check_staff_detail">查看详情</string>
+    <string name="btn_navi_to_here">到这里去</string>
+
+    <!-- StaffDetailActivity 员工详情 -->
+    <string name="title_staff_detail">员工详情</string>
+    <string name="label_staff_basic_info">基本信息</string>
+    <string name="label_staff_idcard_pic">证件照片</string>
+    <string name="label_staff_current_city">当前城市</string>
+    <string name="label_staff_help">请ta帮忙</string>
+
+    <!-- SelectLocationActivity  选择位置 -->
+    <string name="title_select_location">当前定位-</string>
+    <string name="tips_for_search_location_editable_box">请输入城市中文名称或拼音首字母</string>
+    <string name="label_current_city_location">已定位的城市</string>
+    <string name="label_hot_city">最热门的城市</string>
+
+    <!-- ToBeLazyStaffActivity  申请成为懒人员工 -->
+    <string name="title_tobe_lazy_staff">申请成为创业会员</string>
+    <string name="title_tobe_lazy_waimai">申请成为创业会员</string>
+    <string name="title_tobe_lazy_mywaimaishop">我的商店</string>
+    <string name="title_tobe_select_staff">选择员工</string>
+    <string name="hint_lazy_staff_protocol">懒人员工注册协议</string>
+    <string name="hint_input_urgent_telephone">请输入紧急联系人的手机号码</string>
+    <string name="label_urgent_telephone">联系人手机</string>
+    <string name="hint_input_urgent_real_name">请输入紧急联系人的真实姓名</string>
+    <string name="label_urgent_man">联系人</string>
+    <string name="warning_input_urgent_info">*请填写紧急联系人,确保你的安全</string>
+    <string name="warning_upload_skill_certification">*请上传可证明您具有该技能的证书或证明</string>
+    <string name="lable_skill_certification">技能认证</string>
+    <string name="warning_choose_skill">*请选择您的专项技能</string>
+    <string name="label_choose_skill">技能选择</string>
+    <string name="label_uploaded">已上传</string>
+    <string name="label_idcard_certification">证件验证</string>
+    <string name="warning_upload_idcard_pic">*以下证件信息请上传高清图片</string>
+    <string name="label_area_location">所在地区</string>
+    <string name="hint_input_your_idcard_num">请输入您的身份证号码</string>
+    <string name="label_idcard_num">身份证号</string>
+    <string name="hint_input_real_name">请输入您的真实姓名</string>
+    <string name="label_real_name">真实姓名</string>
+    <string name="warning_input_your_real_info">*以下身份信息请如实填写</string>
+    <string name="label_info_certification">身份验证</string>
+    <string name="btn_submit">提交</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_delete">删除</string>
+    <string name="error_id_card">请输入身份证号码！</string>
+    <string name="error_real_name">请输入本人姓名！</string>
+    <string name="error_urgent_name">请输入紧急联系人姓名！</string>
+    <string name="error_urgent_telephone">请输入紧急联系人手机号！</string>
+    <string name="error_choose_skill">请选择员工技能！</string>
+    <string name="error_positive_face">请上传本人正面照！</string>
+    <string name="error_id_card_positive">请上传身份证正面照！</string>
+    <string name="error_id_card_negative">请上传身份证背面照！</string>
+    <string name="error_hand_hold_id_card">请上传本人手持身份证正面照！</string>
+    <string name="error_skill_certification">请上传技能证件照！</string>
+    <string name="error_noexist_store">商店不存在</string>
+    <string name="nowcheck">正在审核</string>
+    <string name="title_tobe_lazy_server">懒人服务</string>
+
+    <string name="lable_fbsj">发布时间:</string>
+    <string name="lable_syxq">商业需求:</string>
+    <string name="lable_syjz">商业价值估值</string>
+    <string name="text_more_desc">更多需求详情>></string>
+    <string name="lable_yqhy">你邀请的会员</string>
+    <string name="lable_zsmsfs">专属秘书将您的需求也发送给以下会员</string>
+    <string name="lable_yybz">以下会员表示愿意帮助</string>
+    <string name="lable_zjcy">最佳参与商友</string>
+    <string name="lable_syzj">商业需求总结</string>
+    <string name="text_canyuzhi">参与值 :</string>
+    <string name="text_huoyuezhi">活跃值 :</string>
+    <string name="qrcode_warn">将二维码放入扫描框内，即可自动扫描</string>
+    <string name="qrcode_invitecode">请使用浏览器或微信扫描</string>
+    <!-- dialog choose photo -->
+    <string name="label_choose_photo_from_gallery">从相册中选取</string>
+    <string name="label_take_photo_from_camera">拍照</string>
+    <string name="label_cancel">取消</string>
+    <string name="message_cancel_success">取消成功</string>
+    <string name="toast_no_external_storage">暂无外部存储</string>
+    <string name="toast_camera_is_not_ready">摄像头尚未准备好</string>
+    <string name="toast_uploading">正在上传...</string>
+    <string name="toast_submiting">正在提交...</string>
+    @string/order_person_name
+    <!-- message room -->
+    <string name="label_message_title">消息中心</string>
+    <string name="second_message_title">二级消息</string>
+    <string name="btn_message_all_read">全部已读</string>
+    <string name="order_valuation">%.2f元</string>
+    <string name="order_person_name">懒人“%s”</string>
+    <string name="order_countdown_one">%s后, 自动关闭订单</string>
+    <string name="order_countdown_two">等待员工接单(还剩%s)</string>
+    <!-- voice -->
+    <string name="voice_record">录音</string>
+    <string name="voice_sayserver">说出你想要找的服务</string>
+</resources>

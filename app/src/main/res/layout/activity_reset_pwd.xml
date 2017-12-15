@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_old_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="#FFFFFF"
+                android:hint="@string/hint_old_pwd"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/TextColorBlack"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="15sp" >
+            </EditText>
+            <ImageView
+                android:id="@+id/btn_show_old_pwd"
+                android:layout_width="38dp"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_pwd_hide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/split_line"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_new_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="#FFFFFF"
+                android:hint="@string/hint_input_new_pwd"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/TextColorBlack"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="15sp" >
+            </EditText>
+            <ImageView
+                android:id="@+id/btn_show_new_pwd"
+                android:layout_width="38dp"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_pwd_hide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/split_line"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_confirm_new_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:background="#FFFFFF"
+                android:hint="@string/hint_confirm_new_pwd"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/TextColorBlack"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="15sp" >
+            </EditText>
+            <ImageView
+                android:id="@+id/btn_show_confirm_new_pwd"
+                android:layout_width="38dp"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btn_pwd_hide" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/split_line"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_reset_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/selector_button_orange"
+        android:text="@string/title_reset_pwd"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

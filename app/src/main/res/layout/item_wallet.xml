@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:gravity="center_vertical"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radiusbackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="4dip">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dip"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_tiltle_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/label_order_money"
+                android:textColor="#333"
+                android:layout_marginLeft="@dimen/margin_15"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/tv_qiangan_wallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dip"
+                android:text="1345648"
+                android:textColor="#ff933c"
+                android:textSize="16dip" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_forwath_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:textColor="@color/black_light"
+            android:text="@string/label_lazy_staff_cunruwallet"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_marginTop="8dip"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#e1dfdf" />
+
+        <TextView
+            android:id="@+id/tv_time_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dip"
+            android:text="@string/hint_fill_default_serve_time"
+            android:textSize="13sp"
+            android:textColor="@color/black_light" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+
+        android:layout_marginTop="1dip"
+        android:layout_marginBottom="1dip">
+<ImageView
+    android:id="@+id/iv_imagefd"
+    android:layout_width="60dip"
+    android:layout_height="60dip"
+
+    android:layout_centerVertical="true"
+    android:layout_marginLeft="10dip"
+    />
+    <LinearLayout
+        android:layout_toRightOf="@+id/iv_imagefd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dip"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+
+
+        <TextView
+            android:id="@+id/tv_tiltle_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="隆江猪脚饭"
+            android:textColor="#333"
+            android:layout_marginLeft="10dip"
+            android:textSize="18dip" />
+        <TextView
+            android:id="@+id/tv_mun_dd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:text="真的很好吃"
+            android:layout_marginLeft="10dip"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/tv_miaoshut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:text="真的很好吃"
+            android:layout_marginLeft="10dip"
+            android:textSize="16dip" />
+
+        <TextView
+        android:id="@+id/tv_jiage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dip"
+        android:text="真的很好吃"
+        android:textColor="@color/red"
+        android:layout_marginLeft="10dip"
+        android:textSize="16dip" />
+
+    </LinearLayout>
+    <ImageView
+
+        android:layout_width="1dip"
+        android:layout_height="60dip"
+        android:layout_margin="10dip"
+        android:background="#aaa"
+ android:layout_toLeftOf="@+id/iv_shaschu"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:id="@+id/iv_shaschu"
+        android:layout_marginRight="20dip"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:src="@drawable/delshop"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        />
+
+</RelativeLayout>
+</LinearLayout>

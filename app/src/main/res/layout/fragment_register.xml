@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dip"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_telphone"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="5dip"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/icon_phone"
+                android:drawablePadding="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_your_telephone_number"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/TextColorBlack"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_send_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@drawable/button_selector_oranger_white"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/btn_send_verification_code"
+                android:textColor="@color/bg_sec_oranger"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/split_line"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/icon_verification"
+                android:drawablePadding="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_please_confirm_code"
+                android:maxLength="18"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/TextColorBlack"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="15sp"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/split_line"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_please_input_pwd"
+                android:inputType="textPassword"
+                android:maxLength="18"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/TextColorBlack"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="15sp"></EditText>
+
+            <CheckBox
+                android:id="@+id/btn_show_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:button="@null"
+                android:drawableLeft="@drawable/selector_show_password"
+                android:gravity="center"
+                android:padding="@dimen/margin_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/split_line"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_guid"
+                android:layout_width="wrap_content"
+                android:layout_height="60dip"
+                android:layout_marginLeft="5dip"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:drawableLeft="@drawable/referee"
+                android:drawablePadding="@dimen/margin_20"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_please_refereeid"
+                android:maxLength="18"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="@color/TextColorBlack"
+                android:textColorHint="@color/hint_gray"
+                android:textSize="15sp"></EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_button_orange"
+        android:text="@string/btn_register"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hint_have_read_and_agree"
+            android:textColor="@color/hint_gray" />
+
+        <Button
+            android:id="@+id/btn_user_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="@string/hint_lazy_user_protocol"
+            android:textColor="@color/bg_sec_oranger"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+</LinearLayout>

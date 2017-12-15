@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dip"
+                        android:gravity="center_vertical"
+
+                        android:text="@string/title_order_content"
+                        android:textColor="@color/black_light"
+                        android:textSize="17sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_describe_lookorder"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dip"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dp"
+                            android:background="#FFFFFF"
+                            android:hint="@string/hint_please_describe_your_wish"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLines="5"
+                            android:textColor="@color/TextColorBlack"
+                            android:textColorHint="@color/hint_gray"
+                            android:textSize="15sp"></TextView>
+                        <LinearLayout
+                            android:id="@+id/ll_vocie_look"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@android:color/white"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/iv_vocie_look"
+                                android:layout_width="100dip"
+                                android:layout_height="100dip"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/bofang"
+
+                                android:visibility="gone"/>
+                                <ProgressBar
+                                    android:id="@+id/pb_lookoder"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_width="100dip"
+                                    android:layout_height="100dip"
+                                      />
+
+                            </FrameLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/line_divider_height"
+                                android:layout_marginLeft="@dimen/margin_10"
+                                android:layout_marginRight="@dimen/margin_10"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:background="@color/gray_light" />
+
+                            <LinearLayout
+                                android:id="@+id/add_goods"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                >
+
+                                <android.bigplan.lego.view.PopupSeekBar
+                                    android:id="@+id/pb_voice_lookt"
+                                    style="@style/MySeekBar"
+                                    android:layout_width="200dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/selectstand_layout04_text01"
+                                    android:layout_marginBottom="@dimen/margin_20"
+                                    android:layout_marginLeft="@dimen/margin_20"
+                                    android:layout_marginRight="@dimen/margin_20"
+                                    android:layout_marginTop="@dimen/margin_10" />
+                                <TextView
+                                    android:id="@+id/tv_timevicece_look"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:text="20秒"
+                                    android:textColor="@color/black_light"
+                                    android:textSize="17sp"></TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_baomufuwu_look"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            >
+
+                            <TextView
+                                android:id="@+id/tv_type_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/label_lookup_time"
+                                android:textColor="@color/black_light"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tv_timebaomu_lookorder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dip"
+                                android:background="@drawable/selector_button_orange"
+                                android:gravity="center_vertical"
+                                android:layout_gravity="center_vertical"
+
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/TextColorBlack"
+                                android:textColorHint="@color/hint_gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/layout_jiajiao"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dip"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            android:visibility="gone"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginBottom="3dip"
+                                android:layout_marginLeft="10dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+
+                                    android:gravity="center_vertical"
+                                    android:text="@string/label_lookup_jiajiao"
+                                    android:textColor="@color/black_light"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_jiajiao_lookorder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+
+
+                                    android:background="@drawable/selector_button_orange"
+                                    android:gravity="center_vertical"
+
+                                    android:inputType="text"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/TextColorBlack"
+                                    android:textColorHint="@color/hint_gray"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp" android:layout_marginBottom="3dip"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+
+                                    android:gravity="center_vertical"
+                                    android:text="@string/label_lookup_kemu"
+                                    android:textColor="@color/black_light"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_kemu_lookorder"
+
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+
+                                    android:background="@drawable/selector_button_orange"
+                                    android:gravity="center_vertical"
+
+                                    android:inputType="phone"
+                                    android:maxLength="11"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/TextColorBlack"
+                                    android:textColorHint="@color/hint_gray"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp" android:layout_marginBottom="3dip"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+
+                                    android:gravity="center_vertical"
+                                    android:text="@string/label_lookup_time"
+                                    android:textColor="@color/black_light"
+                                    android:textSize="17sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_time_lookorder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dip"
+
+                                    android:background="@drawable/selector_button_orange"
+                                    android:gravity="center_vertical"
+
+                                    android:inputType="text"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="@color/TextColorBlack"
+                                    android:textColorHint="@color/hint_gray"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/split_line"
+                                android:orientation="horizontal"></LinearLayout>
+                        </LinearLayout>
+                        <android.bigplan.lego.view.GroupGridView
+                            android:id="@+id/gv_look"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/white"
+                            android:horizontalSpacing="10dp"
+                            android:listSelector="@android:color/transparent"
+                            android:numColumns="3"
+                            android:stretchMode="columnWidth"
+                            android:verticalSpacing="10dp"
+                            android:visibility="gone"/>
+
+                        <android.bigplan.lego.view.GroupListView
+                            android:id="@+id/lv_lookder"
+                            android:layout_width="match_parent"
+                            android:layout_height="20dip"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="2dp"
+                            android:background="@color/white"
+                            android:listSelector="@android:color/transparent"
+                            android:visibility="gone"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/split_line"
+                            android:orientation="horizontal"></LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="20dip"
+                                android:gravity="center_vertical"
+
+                                android:text="@string/label_order_money"
+                                android:textColor="@color/black_light"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tv_qian_lookorder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="30"
+                                android:textColor="#ef6732" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/split_line"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/label_order_fuwu"
+                        android:textColor="@color/black_light"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/split_line"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout__lookorder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_lazy_name"
+                                android:textColor="@color/gray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_name_lookorder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="5dip"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_receive_name"
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/TextColorBlack"
+                                android:textColorHint="@color/hint_gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:text="@string/telphone"
+                                android:textColor="@color/gray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_phone_lookorder"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="5dip"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_receive_telephone"
+                                android:inputType="phone"
+                                android:maxLength="11"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/TextColorBlack"
+                                android:textColorHint="@color/hint_gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:text="@string/title_receive_address"
+                                android:textColor="@color/gray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_server_lookorder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="5dip"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_receive_detail_address"
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/TextColorBlack"
+                                android:textColorHint="@color/hint_gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/split_line"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/split_line"
+                        android:orientation="horizontal"></LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_help_song"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:background="@color/white"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:text="@string/label_order_shouhuoinf"
+                                android:textColor="@color/gray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_shouhuo_lookorder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="5dip"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_receive_name"
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/TextColorBlack"
+                                android:textColorHint="@color/hint_gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:text="@string/telphone"
+                                android:textColor="@color/gray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_haoma_lookorder"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="5dip"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_receive_telephone"
+                                android:inputType="phone"
+                                android:maxLength="11"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/TextColorBlack"
+                                android:textColorHint="@color/hint_gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="3"
+                                android:gravity="center_vertical"
+                                android:text="@string/label_receive_address"
+                                android:textColor="@color/gray"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/tv_shouhuo_address_lookorder"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="15dip"
+                                android:layout_marginTop="5dip"
+                                android:layout_weight="1"
+                                android:background="#FFFFFF"
+                                android:gravity="center_vertical"
+                                android:hint="@string/hint_receive_detail_address"
+                                android:inputType="text"
+                                android:paddingLeft="10dp"
+                                android:singleLine="true"
+                                android:textColor="@color/TextColorBlack"
+                                android:textColorHint="@color/hint_gray"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/split_line"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_submi_lookorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector_button_orange"
+                    android:text="@string/label_order_jiedan"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="20dip"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

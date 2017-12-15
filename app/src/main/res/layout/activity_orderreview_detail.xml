@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_describe_orderreview"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dip"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="15dip"
+                            android:layout_marginRight="15dp"
+                            android:background="#FFFFFF"
+                            android:hint="@string/hint_please_describe_your_wish"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:maxLines="5"
+                            android:textColor="@color/TextColorBlack"
+                            android:textColorHint="@color/hint_gray"
+                            android:textSize="15sp"></TextView>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/split_line"
+                            android:orientation="horizontal"></LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dip"
+                                android:gravity="center_vertical"
+
+                                android:text="@string/label_order_money"
+                                android:textColor="@color/black_light"
+                                android:textSize="17sp" />
+
+                            <TextView
+                                android:id="@+id/tv_qian_orderreview"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:textColor="#ef6732"
+                                android:text="30" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+
+                    android:layout_marginTop="10dip"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/white"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="79"
+
+                            android:gravity="center_vertical"
+                            android:text="@string/app_name"
+                            android:textColor="@color/black_light"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/et_myname_orderreview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="5dip"
+                            android:layout_weight="43"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_receive_name"
+                            android:inputType="text"
+
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/hint_gray"
+                            android:textColorHint="@color/hint_gray"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/btn_switch_address"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_weight="1.5"
+                            android:background="@drawable/icon_switch_address" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/icon_receive" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dip"
+                            android:layout_weight="40"
+                            android:gravity="center_vertical"
+                            android:text="@string/telphone"
+                            android:textColor="@color/black_light"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/et_my_phone_orderreview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginTop="5dip"
+                            android:layout_weight="17"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_receive_telephone"
+                            android:inputType="phone"
+                            android:maxLength="11"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/hint_gray"
+                            android:textColorHint="@color/hint_gray"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="53"
+                            android:gravity="center_vertical"
+                            android:text="@string/title_receive_address"
+                            android:textColor="@color/black_light"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/et_my_address_orderreview"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dip"
+
+                            android:layout_marginTop="5dip"
+                            android:layout_weight="17"
+                            android:background="#FFFFFF"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_receive_detail_address"
+                            android:inputType="text"
+                            android:paddingLeft="10dp"
+                            android:singleLine="true"
+                            android:textColor="@color/hint_gray"
+                            android:textColorHint="@color/hint_gray"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/split_line"
+                        android:orientation="horizontal"></LinearLayout>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btn_submi_orderreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/selector_button_orange"
+                    android:text="@string/btn_complete_order_detail"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

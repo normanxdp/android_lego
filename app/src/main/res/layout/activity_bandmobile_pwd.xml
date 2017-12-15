@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_please_input_pwd"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/TextColorBlack"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="15sp"></EditText>
+
+        <CheckBox
+            android:id="@+id/btn_show_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_show_password"
+            android:gravity="center"
+            android:padding="@dimen/margin_10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/split_line"
+        android:orientation="horizontal"></LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/et_pwd_conform"
+            android:layout_width="wrap_content"
+            android:layout_height="60dip"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="@dimen/margin_20"
+            android:gravity="center_vertical"
+            android:hint="@string/hint_please_conform_pwd"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/TextColorBlack"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="15sp"></EditText>
+
+        <CheckBox
+            android:id="@+id/btn_show_pwd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:button="@null"
+            android:drawableLeft="@drawable/selector_show_password"
+            android:gravity="center"
+            android:padding="@dimen/margin_10" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_button_orange"
+        android:text="@string/label_btn_confirm"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

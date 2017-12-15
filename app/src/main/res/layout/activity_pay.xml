@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/toobar"
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pb_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_addfdsafaan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toobar"
+        android:layout_marginTop="20dip"
+
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rl_chongzhi_pay"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+
+            android:padding="15dip"
+            android:background="#fff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/order_chognzhi" />
+
+            <TextView
+                android:id="@+id/tv_pay_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:layout_centerVertical="true"
+                android:drawablePadding="10dip"
+                android:gravity="center"
+                android:text="1000.00元"
+                android:drawableRight="@drawable/forward"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dip"
+             />
+        <RelativeLayout
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_marginTop="20dip"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   android:textSize="20sp"
+                    android:text="@string/order_pay_for"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dip"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_wx_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="#fff"
+
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/weixin" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/order_pay_forweixin"
+                     />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pay_wx_img"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/choosan" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dip" />
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_zfb_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+             >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/zfb" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/order_pay_forzfb"
+                     />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pay_zfb_img"
+                android:visibility="gone"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/choosa" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:visibility="gone"
+            android:layout_height="0.2dip"
+           />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dip"
+              />
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_jb_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:visibility="gone"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/qq" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="@string/order_pay_forqq"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pay_jb_img"
+                android:visibility="gone"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/choosa" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_pay_unpay_img"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="15dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:background="@drawable/qq" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:text="银联支付"
+                  />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pay_unpay_img"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dip"
+                android:background="@drawable/choosa" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buy_itnow"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="30dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:background="@drawable/selector_button_orange"
+        android:gravity="center"
+        android:layout_below="@+id/ll_addfdsafaan"
+        android:text="@string/order_pay_queding"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

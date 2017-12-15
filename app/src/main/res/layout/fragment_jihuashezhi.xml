@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding ="20dip"
+    android:background="@color/transparent">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="指派时间设置"
+android:textColor="@color/white"
+android:textSize="20sp"
+    />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:background="@color/maincolor"
+        android:textColor="@color/white"
+
+        />
+    <View
+        android:layout_width="20dip"
+        android:layout_height="0.5dip"
+android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:background="#fff" />
+    <EditText
+        android:layout_width="100dip"
+        android:layout_height="40dip"
+        android:layout_marginLeft="10dip"
+        android:textColor="@color/white"
+        android:background="@color/maincolor"
+        />
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="指派区域设置"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="10dip"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="以您附近"
+            android:textColor="@color/white"
+            />
+        <EditText
+            android:layout_width="50dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:background="@color/maincolor"
+            android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KM区域"
+            android:layout_marginLeft="10dip"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</LinearLayout>

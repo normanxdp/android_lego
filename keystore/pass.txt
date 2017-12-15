@@ -1,0 +1,6 @@
+pass    legoyun
+auth    legoyun 
+xudanpeng
+shenzhen
+china
+legoyun

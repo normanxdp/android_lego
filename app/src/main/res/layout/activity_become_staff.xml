@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/include_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:background="@color/white"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip">
+
+            <TextView
+                android:id="@+id/tx_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/tab_selected_text"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="0dip"
+                android:text="@string/label_become_staff_explain"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="2dp"
+            android:id="@+id/edit_storenaem"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:gravity="left"
+            android:hint="@string/label_storename"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/TextColorBlack"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_marginTop="2dp"
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:gravity="left"
+            android:hint="@string/label_storename_address"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:textColor="@color/TextColorBlack"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/ll_longitude"
+                android:layout_width="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:paddingLeft="10dp"
+                android:background="@color/white"
+                android:paddingTop="5dp">
+
+
+                <EditText
+
+                    android:id="@+id/edit_longitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:gravity="left"
+                    android:hint="@string/label_longitude"
+
+                    android:singleLine="true"
+                    android:textColor="@color/TextColorBlack"
+                    android:textColorHint="@color/hint_gray"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_latitude"
+                android:layout_width="0dp"
+                android:layout_marginLeft="1dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:background="@color/white"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dip">
+
+                <EditText
+
+                    android:id="@+id/edit_latitude"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFFF"
+                    android:gravity="left"
+                    android:hint="@string/label_latitude"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="2dp"
+                    android:singleLine="true"
+                    android:textColor="@color/TextColorBlack"
+                    android:textColorHint="@color/hint_gray"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="2dp"
+            android:id="@+id/edit_idcard_num"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:gravity="left"
+            android:hint="@string/label_idcard_num"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColor="@color/TextColorBlack"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="20sp" />
+
+
+        <EditText
+            android:layout_marginTop="2dp"
+            android:id="@+id/et_telphone"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:hint="@string/label_urgent_telephone"
+
+            android:maxLength="18"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/TextColorBlack"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="20sp">
+        </EditText>
+
+        <EditText
+            android:layout_marginTop="2dp"
+            android:id="@+id/et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#FFFFFF"
+            android:gravity="center_vertical"
+            android:hint="@string/label_pay_passsword"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/TextColorBlack"
+            android:textColorHint="@color/hint_gray"
+            android:textSize="20sp">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/selector_button_orange"
+            android:text="@string/label_btn_confirm"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

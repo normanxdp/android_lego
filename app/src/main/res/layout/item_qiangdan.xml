@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:gravity="center_vertical"
+
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/radiusbackground"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginBottom="5dip"
+
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:gravity="center_vertical"
+
+        >
+
+        <ImageView
+            android:id="@+id/iv_pao_qiangan"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/tv_for_qiangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="1345648"
+            android:textColor="#333" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.1dip"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_forwath1_qiangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="2dp"
+        android:text="@string/title_grab_order_success"
+        android:textColor="#b3b3b3" />
+
+    <TextView
+        android:id="@+id/tv_forwath2_qiangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dip"
+        android:text="@string/title_grab_order_success"
+        android:textColor="#b3b3b3"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_address1_qiangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="2dip"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <android.bigplan.lego.view.RoundImageView
+            android:id="@+id/iv_address1_qiangan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="2dip"
+
+            android:background="@drawable/icon_send" />
+
+        <TextView
+            android:id="@+id/tv_address1_qiangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/title_grab_order_success"
+            android:textColor="#555" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address2_qiangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="2dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="2dip"
+        android:gravity="center_vertical"
+
+        >
+
+        <android.bigplan.lego.view.RoundImageView
+            android:id="@+id/iv_address2_qiangan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/icon_receive" />
+
+
+        <TextView
+            android:id="@+id/tv_address2_qiangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="@string/title_grab_order_success"
+            android:textColor="#555" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0.1dip"
+        android:background="@color/gray" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="2dip"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tigong_qiangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/label_order_money"
+                android:textColor="#333"
+                android:textSize="16dip" />
+
+            <TextView
+                android:id="@+id/tv_qian_qiangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dip"
+                android:text="1345648"
+                android:textColor="#ff933c"
+                android:textSize="16dip" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_qiandan"
+            android:layout_width="wrap_content"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="10dip"
+            android:background="#ff933c"
+            android:focusable="false"
+            android:gravity="center"
+
+            android:text="@string/title_grab_order"
+            android:textColor="#fff"
+            android:textSize="14dip" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

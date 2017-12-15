@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_tab_bg"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp">
+
+            <FrameLayout
+                android:id="@+id/fl_menu_first"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null">
+
+                <RadioButton
+                    android:id="@+id/tab_first"
+                    style="@style/TabButton"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:checked="true"
+                    android:drawableTop="@drawable/tab_first"
+                    android:text="@string/label_tab_tv_first" />
+
+                <TextView
+                    android:id="@+id/tv_first_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@drawable/eiz"
+                    android:gravity="center"
+                    android:text="@null"
+                    android:textColor="@color/white"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_menu_second"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null">
+
+                <RadioButton
+                    android:id="@+id/tab_second"
+                    style="@style/TabButton"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/tab_second"
+                    android:text="@string/label_tab_tv_search" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_menu_take_order"
+                android:layout_width="0.0dip"
+                android:visibility="gone"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/tab_rob_press"
+                        android:padding="3dp">
+
+                        <ImageView
+                            android:id="@+id/btn_take_order"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/tv_take_order"
+                        style="@style/TabButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/label_tab_tv_third"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_menu_fourth"
+                android:layout_width="0.0dip"
+                android:visibility="gone"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null">
+
+                <RadioButton
+                    android:id="@+id/tab_fourth"
+                    style="@style/TabButton"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/tab_fouth"
+                    android:text="@string/label_tab_tv_fouth" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fl_menu_fifth"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:background="@null">
+
+                <RadioButton
+                    android:id="@+id/tab_fifth"
+                    style="@style/TabButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableTop="@drawable/tab_fifth"
+                    android:text="@string/label_tab_tv_fifth" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/main_tab_group" />
+
+    </RelativeLayout>
+</TabHost>
